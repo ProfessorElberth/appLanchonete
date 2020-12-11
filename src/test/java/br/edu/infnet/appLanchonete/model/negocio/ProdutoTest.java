@@ -28,25 +28,11 @@ public class ProdutoTest {
 	}
 	
 	@Test
-	void testaToStringComida() {
-		Comida comida = new Comida("pastel", 10, Boolean.FALSE);
-		
-		assertTrue("pastel;10.0;false".equals(comida.toString()));
-	}
-	
-	@Test
 	void testaSobremesa() {
 		Sobremesa sobremesa = null;
 		
 		sobremesa = new Sobremesa("bolo", 15, Boolean.TRUE);
 		
 		assertNotNull(sobremesa);
-	}
-	
-	@Test
-	void testaToStringSobremesa() {
-		Sobremesa sobremesa = new Sobremesa("bolo", 15, Boolean.TRUE);
-		
-		assertTrue("bolo;15.0;true".equals(sobremesa.toString()));
 	}
 }
